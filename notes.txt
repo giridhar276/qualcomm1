@@ -1,0 +1,439 @@
+
+C - data types
+-----------------
+int a = 10;
+
+float b = 34.43;
+
+char c = 'z';
+double
+long
+short
+
+
+
+python - objects
+-----------------
+
+number
+a = 10
+b = 20
+
+string
+
+list
+
+tuple
+
+dictionary
+
+set
+
+
+
+number
+------
+number can be integer or decimal or octal or hexa.
+
+val = 10
+aval = 34.4
+
+string
+-------
+string is sequence of characters.
+String is defined in single or double or triple quotes.
+
+
+aname = 'python programming'
+bname = "java programming"
+cname = """data science""""
+
+
+
+list
+
+
+tuple
+
+
+dictionary
+
+set
+
+
+creating environements
+--------------------
+
+
+mac:
+
+python -m venv myenv1
+source ./myenv1/bin/activate
+
+
+windows:
+python -m venv myenv1
+.\myenv1\Scripts\activate
+
+
+
+
+conditions
+--------
+
+simple if condition
+
+if-else condition
+
+if-elif-elif-elif-elif-else
+
+
+
+line1
+line2
+line3
+if cond:
+    line
+    line
+    line
+else:
+    line
+    line
+    line
+
+
+
+
+level1
+level1
+level1
+if cond:
+    level2
+    level2
+    level2
+level1
+level1
+
+
+
+
+# display all the numbers 1 to 10 in c
+
+for ( i = 1 ; i <=10 ; i++)
+{
+
+
+}
+
+
+counter = 1
+while ( counter <= 10 )
+{
+    print(counter)
+    counter++
+}
+
+
+
+
+for val in iterable:
+    print(val)
+
+
+list ( array in c)
+---------------
+-collection of items
+- elements can be numbers or strings or any combination.
+- list is defined in []   ( we dont predeclare the size)
+
+alist  = [10,20,30,40]
+blist = ["java","oracle"]
+clist = [34,"unix",56.3]
+
+
+
+tuple  ( immutable  uneditable unchangeable)
+-------
+-collection of items
+- elements can be numbers or strings or any combination.
+- tuple is defined in ()   
+**** Elements inside tuple cannot be modified directly *****
+**** tuple is immutable ****
+atup = (34,32,43,0)
+btup = ("java","ml","dl")
+ctup = (30,40,"java",56.54)
+
+
+dictionary  ( hash    hashmap   associativearray      json )
+----------
+dictionary contains elements in the form of keys and values.
+keys are always UNIQUE
+key can be eithe number or string.
+value can be number or string or list or tuple or dictionary or any other complex datastructure.
+dictionary is defined in {}.
+
+syntax:   object = { key:value , key:value , key:value }
+example:  book   = {"chap1":10 ,"chap2":20  ,"chap3": 30 }
+          numbers = {1:2,3:4,5:6}
+          bookinfo   = {"chap1":["Rita","UK",100] ,"chap2":["Ram","US",200] }
+
+
+
+functions
+---------
+There are 2 types of functions
+
+1. builtin functions
+2. user defined functions
+
+
+
+builtin functions
+------------------
+
+print()
+input() : read input from keyboard just like scanf
+len()
+type()
+isinstance()
+max()
+min()
+sum()
+id()
+dir()
+open()
+map()
+fiilter()
+
+int()
+float()
+str()
+list()
+tuple()
+dict()
+set()
+
+
+print(dir(__builtins__))
+
+
+
+operators
+----------
+
+
+aritmetic operators :   + - * % /
+
+relational operators:   <   >   <=  >=  ==    !=
+
+logical operators :   && ||  !      ( only in C langauge)
+                     and or not     (in python)
+
+
+assignment operators : ( ++ and -- are NOT allowed in python)
+
+val = 10
+val+=1    (or) val = val + 1   
+val-=1    (or) val = val - 1 
+
+
+special operators:
+----------------
++ ( concatenation )
+* ( repetition)
+in
+as
+
+
+
+user defined function | definition | block | function | subroutine 
+------------------------------------------------------------------
+- code reusability purpose
+- we define the block once and call it for multiple times.
+
+
+file handling
+-----------------
+
+
+---txt
+jpg
+mp4
+mp3
+xlsx
+---csv
+---.sv
+---.json
+.cshrc
+.pdf
+docx
+---xml
+html
+xtm
+pptx
+zip
+rar
+tar
+gz
+tar.gz
+7z
+---.config
+---.conf
+.---log
+---.prop
+---yml
+apk
+
+
+
+
+
+working with flat files( log csv conf prop  txt ....)
+- core python
+
+
+working with third party files ( docx  pdf  pptx  7z ....)
+- we need some third party library to work with these files
+
+
+
+
+
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+#include<string.h>
+#include<graphics.h>
+#include<time.h>
+#include<stdlib.h>
+#include<stdmanip.h>
+
+
+python
+--------
+builtin libraries
+third party libraries
+
+
+
+working with flat files
+----------------------
+read   - r 
+write  - w
+append - a
+
+
+opening the file
+-----------------
+syntax:   object = open(file,mode)
+example:    fr = open("customers.txt","r")  # read mode
+            fw = open("customers.txt","w")  # write mode
+            # if the file is not existing, file will be created first
+            # if the file is already existing, it overwrites the existing content
+
+
+            fa = open("customers.txt","a")  # append mode
+            # if the file is not existing, file will be created first
+            # if the file is already existing, it appends the new content
+
+
+
+closing the file
+fr.close()
+
+
+reading the file
+----------------
+
+- reading the file line by line using fobj
+- using fobj.readlines()
+- using fobj.read()
+- using csv library
+- using pandas library
+
+
+exception handling
+-------------------
+
+
+syntax error
+
+semantic error or runtime error or logical error
+
+Handling the  errors that occurs during runtime is known as exception handling.
+
+try
+except
+else     ( optional)
+finally  ( optional)
+raise
+
+
+libraries
+--------
+
+builtin libraries
+-------------------
+builtin libraries are installed with python setup which are used for the general purpose
+( math operations, OS operations ,system config level, ftp , emailing , process ...)
+
+
+third party libraries
+------------------------
+Depending on the requirement( Data science, web developement, scraping, testing,cloud, devices, GUI)
+ developer has to install the third party library from
+
+- using pip tool  ( automated tool for downloading and installing the library)
+- manually downloading and installing.
+
+
+
+CORE PYTHON
+
+
+CORE PYTHON(procedural, object oriented ) + libraries + core domain expertise  = task
+
+
+
+delete a file         :    os.remove(file)
+display date n time   :   datetime.datetime.now()
+copy file from c to D :   shutil.copy(source,destination)  #shell utilities
+platform related      :    platform
+cpu,memory,networkinfo:   psutil
+python version        :   sys.version
+time operation        :   time
+math operations       :   math
+
+
+
+check the time taken to execute the code
+--------------------------
+
+method1:
+while executing the code at command prompt
+
+C:\myenv1>python3 hello.py  # this is the way we execute
+
+C:\myenv1>time python3 hello.py
+
+
+method2:
+---------
+import time
+start = time.time() # at the beginning
+
+end = time.time()   # at the end of the program
+
+
+
+method3
+-------
+import timeit
+
+
+
+cprofile
+--------
+cprofile is built-in Python module that provides a way to profile your Python programs,
+ helping you identify performance bottlenecks by showing how much time is spent in each function.
+
